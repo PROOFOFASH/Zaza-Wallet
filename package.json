@@ -1,0 +1,27 @@
+{
+  "name": "zaza-wallet",
+  "version": "1.0.0",
+  "description": "A decentralized wallet application for managing loyalty programs, supporting XRPL and Solana addresses.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^6.0.2",
+    "@react-navigation/stack": "^6.0.7",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.2.4",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.8.0",
+    "xrpl": "^2.0.1",
+    "solana-web3.js": "^0.96.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "react-test-renderer": "17.0.2"
+  }
+}
