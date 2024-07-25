@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const WalletScreen = () => {
+const SwapScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Wallet Screen</Text>
-      {/* Add wallet functionalities here */}
+      <Text>Swap Screen</Text>
+      {/* Add swap functionalities here */}
     </View>
   );
 };
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WalletScreen;
+export default SwapScreen;

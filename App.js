@@ -1,20 +1,22 @@
-import React from 'react';
+import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './src/screens/HomeScreen';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import WalletScreen from './src/screens/WalletScreen';
+import SwapScreen from './src/screens/SwapScreen';
+import WebScreen from './src/screens/WebScreen';
+import OtherScreen from './src/screens/OtherScreen';
 
-const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
-const App = () => {
+export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Wallet" component={WalletScreen} />
-      </Stack.Navigator>
+      <Tab.Navigator>
+        <Tab.Screen name="Wallet" component={WalletScreen} />
+        <Tab.Screen name="Swap" component={SwapScreen} />
+        <Tab.Screen name="Web" component={WebScreen} />
+        <Tab.Screen name="Other" component={OtherScreen} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
-};
-
-export default App;
+}
